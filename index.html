@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="favicon.png" />
 
         <link
             rel="stylesheet"
@@ -23,25 +23,11 @@
                 color: #d3d3d3;
                 background-color: #1a1a1b;
             }
-
             footer {
                 margin-top: auto;
             }
-
-            .desc {
-                margin-left: 10%;
-                margin-right: 10%;
-                font-size: large;
-            }
             .font-large {
                 font-size: large;
-            }
-            .project {
-                padding: 10px 0px;
-                margin-bottom: 50px;
-                border-radius: 15px;
-                width: auto;
-                background-color: #202020;
             }
         </style>
     </head>
@@ -62,67 +48,48 @@
                 </div>
                 <br />
                 <br />
-                <!-- Project -->
-                <section class="project">
-                    <h2 class="text-center">2048</h2>
-                    <div class="desc">
-                        This is a fun sliding tile game. Use your arrow keys to move the tiles.
-                        Tiles with the same number merge into one when they touch. Add them up to
-                        reach 2048!
-                    </div>
-                    <br />
-                    <h4 class="text-center">
-                        Link:
-                        <a href="https://bitofbeans.github.io/js2048Game">2048 Game</a>
-                    </h4>
-                </section>
-                <section class="project">
-                    <h2 class="text-center">Wordle</h2>
-                    <div class="desc">
-                        Coming soon! (maybe) 
-                    </div>
-                    <br />
-                    <h4 class="text-center">
-                        Link:
-                        Coming Soon
-                        <!-- <a href="https://bitofbeans.github.io/">Wordle</a> -->
-                    </h4>
-                </section>
-                <section class="project">
-                    <h2 class="text-center">Sudoku</h2>
-                    <div class="desc">
-                        Coming soon! (maybe) 
-                    </div>
-                    <br />
-                    <h4 class="text-center">
-                        Link:
-                        Coming Soon
-                        <!-- <a href="https://bitofbeans.github.io/">Sudoku</a> -->
-                    </h4>
-                </section>
-                <section class="project">
-                    <h2 class="text-center">Container for Bootstrap</h2>
-                    <div class="desc">
-                        This is a simple modification to the CSS library Bootstrap. It only applies
-                        Bootstrap styles to a div with the class
-                        <code
-                            style="background-color:#1a1a1b; padding:3px"
-                            class="rounded"
-                            >bootstrap</code
-                        >
-                        . It was created for my 2048 project to not alter the website it is added to.
-                    </div>
-                    <br />
-                    <h4 class="text-center">
-                        Link:
-                        <a href="https://bitofbeans.github.io/cssContainedBootstrap/"
-                            >Contained Bootstrap</a
-                        >
-                    </h4>
-                </section>
+                <!-- Projects -->
+                <project-card
+                    title="2048"
+                    linkText="2048 Game"
+                    href="https://bitofbeans.github.io/js2048Game"
+                >
+                    This is a fun sliding tile game. Use your arrow keys to move the tiles. Tiles
+                    with the same number merge into one when they touch. Add them up to reach 2048!
+                </project-card>
+
+                <project-card
+                    title="Wordle"
+                    linkText="Coming Soon!"
+                    href="https://bitofbeans.github.io/"
+                >
+                    Coming Soon!
+                </project-card>
+
+                <project-card
+                    title="Sudoku"
+                    linkText="Coming Soon!"
+                    href="https://bitofbeans.github.io/"
+                >
+                    Coming Soon!
+                </project-card>
+
+                <project-card
+                    title="Container for Bootstrap"
+                    linkText="Contained Bootstrap"
+                    href="https://bitofbeans.github.io/cssContainedBootstrap/"
+                >
+                    This is a simple modification to the CSS library Bootstrap. It only applies
+                    Bootstrap styles to a div with the class
+                    <code style="background-color: #1a1a1b; padding: 3px" class="rounded"
+                        >bootstrap</code
+                    >
+                    . It was created for my 2048 project to not alter the website it is added to.
+                </project-card>
             </article>
             <!------------>
         </div>
+
         <!-- Footer -->
         <footer>
             <div
@@ -135,5 +102,7 @@
             </div>
         </footer>
         <!------------>
+        <!-- To define custom html-->
+        <script src="./index.js"></script>
     </body>
 </html>
